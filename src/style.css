@@ -1,0 +1,462 @@
+:root{
+    --avg-font-size: calc(20px + 0.5vw);
+    --large-font-size: calc(30px + 0.7vw);
+}
+*{
+    box-sizing: border-box;
+    
+    
+    
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;  
+    color: white;
+    font-size: var(--avg-font-size);
+    
+}
+
+
+/*-----------*/
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4vh;
+
+}
+.htitle{
+    margin-right: auto;
+    font-family: "Playfair Display", serif;
+    font-style: oblique;
+    font-size: calc(20px + 3vw);
+    color: rgb(170, 138, 57);
+
+}
+.title{
+    margin-right: auto;
+    font-family: "Playfair Display", serif;
+    font-style: oblique;
+    font-size: var(--large-font-size);
+    color: rgb(170, 138, 57);
+}
+
+.navbar{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vh;
+    height: 100%;
+}
+
+
+.revervabutton{
+    border-radius: 2px;
+    background-color: rgb(160, 137, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    height: 40%;
+    width: 200px;
+
+}
+
+.revervabutton svg{
+    width: 30px;
+    min-width: 30px;
+}
+
+.log-insta{
+    width: 20%;
+    height: 20%;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+
+/*------MAIN                                       -----*/
+.main{
+    display: flex;
+    height: 90vh;
+    
+    border-bottom: 1px solid goldenrod;
+}
+
+.content{
+    flex: 3;
+    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2dicnRtcjJlZXY5ZnprZmR0MXA2dmxncjB5MHRqdmF5bmkxaWg1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hmzAcor7gBsbK/giphy.gif');
+    
+    background-size:80%;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    padding: 3vh;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.text{
+    font-family: 'Great Vibes', cursive;
+    
+
+    font-style: oblique;
+
+}
+
+.text1{
+    text-align: center;
+    color: goldenrod;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text2{ 
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    font-weight: 300px;
+    letter-spacing: 2px; 
+}
+/* SIDE ------------------------------------------------------------*/
+
+.side{
+    flex: 1;
+    border-left: 1px solid goldenrod;
+    display: flex;
+    flex-direction: column; 
+}
+
+.side .title{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: nowrap;
+
+    font-size: calc(30px + 1.5vw);
+}
+.side ul{
+    
+    text-align: none;
+    list-style: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: bold;
+}
+.side li{
+    
+    margin-bottom: 3vh;
+}
+
+.side li:hover{
+    color: rgb(170, 138, 57);
+    cursor: pointer;
+}
+
+
+/*------GALERIA                       -----*/
+.galeria{
+    width: 100%;
+    height: 1600px;
+    max-width: 1500px;
+    margin: auto;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.descripcion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-bottom: 3px solid rgb(209, 181, 112);
+    padding-bottom: 2vh;
+
+}
+
+.descripcion1{
+    width: 40%;
+    text-align: center;
+
+}
+
+.descripcion-texto{
+    font-size: calc(9px + 0.5vw);
+}
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.fotos1{
+    text-align: center;
+}
+
+.fotos-titulo{
+    font-weight: bold;
+    font-size: var(--large-font-size);
+}
+/*CONTACTO --------------------------------*/
+
+
+.contact{
+    height: 70vh;
+    background-color: white;
+    width: 100%;
+    color: black;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.contactwrapper{
+    max-width: 1200px;
+    display: flex;
+    font-size: calc(8px + 0.5vw);
+    gap: 5vh;
+    
+}
+.contact h1{
+    border-bottom: 2px solid rgb(212, 184, 111);
+    width: 20%;
+}
+
+
+.contact1{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 6vh;
+}
+
+.contact1 form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.contact1 form div{
+    display: flex;
+    gap: 1vh;
+}
+
+.contact1 form div input{
+    width: 40%;
+}
+
+
+.contact1 form input{
+    border: none;
+        border-bottom: 2px solid #ccc; /* Borde gris en la parte inferior */
+        outline: none;
+        background: transparent;
+        transition: border-color 0.3s ease-in-out;
+
+    font-size: 18px; /* Tamaño de fuente adecuado */
+        font-family: "Poppins", sans-serif; /* Fuente moderna */
+        color: #333; /* Gris oscuro */
+        font-style: oblique;
+
+    height: 3vh;
+}
+
+.contact1 form input:focus {
+    border-bottom: 2px solid rgb(212, 184, 111); /* Azul al enfocar */
+}
+
+textarea{
+    border: none;
+        border-bottom: 2px solid #ccc; /* Borde gris en la parte inferior */
+        outline: none;
+        background: transparent;
+        transition: border-color 0.3s ease-in-out;
+
+    font-size: 18px; /* Tamaño de fuente adecuado */
+        font-family: "Poppins", sans-serif; /* Fuente moderna */
+        font-style: oblique;
+
+        color: #333; /* Gris oscuro */
+}
+textarea:focus {
+    border-bottom: 2px solid rgb(212, 184, 111); /* Azul al enfocar */
+}
+
+.contact1 form button{
+
+    height: 4vh;
+    width: 10vh;
+    color: white;
+    text-align: center;
+    background-color:  rgb(212, 184, 111);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.contact2{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.mapa{
+    width: 100%;
+    border: 2px solid gray;
+    height: 50%;
+    background-image: url(assets/mapa.png);
+}
+.cont{
+    list-style: none;
+    margin-bottom: 1vh;
+}
+.smallfont{
+    font-size: larger;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1400px) {
+    .content{
+        background-size:cover;
+        background-position: -200px 0px;
+    }
+
+    .galeria{
+        height: 1600px;
+    }
+
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+
+        
+    
+    
+        border-bottom: 3px solid rgb(209, 181, 112);
+    
+    }
+
+    .revervabutton{
+        height: 80%;
+        width: 200px;
+    
+    }
+    .contact{
+        height: 1200px;
+    }
+
+    .contactwrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black; /* Ajusta según tu diseño */
+        border-bottom: 1px solid goldenrod;
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+   
+
+    .side .title {
+        display: none;
+    }
+
+    .side ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        padding: 0;
+    }
+
+    .side li {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    .main {
+        flex-direction: column;
+        position: relative; /* Asegura que los elementos hijos con posición absoluta se posicionen respecto a este */
+    }
+
+    .content {
+        margin-top: 50px;
+        background-size: 150%; /* Ajusta este valor según la altura de .side */
+    }
+
+    img{
+        width: 60%;
+    }
+
+    .galeria{
+        height: 1400px;
+    }
+
+    .descripcion1{
+        font-size: calc(14px + 0.5vw);
+    }
+
+    .descripcion-texto{
+        font-size: calc(12px + 0.5vw);
+    }
+    
+    .descripcion11{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotos2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact form{
+        font-size: calc(12px + 0.5vw);
+    }
+
+    .contact{
+        height: 1000px;
+    }
+}
